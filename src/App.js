@@ -17,11 +17,6 @@ class App extends React.Component{
     super(props);
     console.log('app constructor only called once when an instance of the app is created');
   }
-
-  componentDidMount(){
-    //ajax call
-    console.log('app mounted');
-  }
   
 handleIncrement = counter => {
     const counters = [...this.state.counters];
@@ -45,7 +40,7 @@ handleReset = () => {
 }
 
 render() {
-  console.log("app rendered");
+  
   return(
     <React.Fragment>
       <NavBar 
